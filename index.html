@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Prueba de Push</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #38bdf8;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #22c55e;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #16a34a;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>✔ Push funcionando</h1>
+        <p>Si estás viendo este archivo en el repositorio, tienes permisos correctamente.</p>
+        <button onclick="mensaje()">Haz clic</button>
+        <p id="msg"></p>
+    </div>
+
+    <script>
+        function mensaje() {
+            document.getElementById("msg").innerText = "¡Tu HTML también funciona!";
+        }
+    </script>
+</body>
+</html>
